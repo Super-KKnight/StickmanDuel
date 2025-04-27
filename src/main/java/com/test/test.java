@@ -6,7 +6,7 @@ public class test {
     public static void main(String[] args) {
         gameName();
         example.sayHello();
-        appUninstalls();
+        downVersion();
         updateVersion();
     }
     public static void gameName() {
@@ -15,7 +15,7 @@ public class test {
     public static void updateVersion(){
         System.out.println("版本更新");
     }
-    public static void appUninstalls(){
-        System.out.println("应用卸载");
+    public static void downVersion(){
+        System.out.println("版本降级");
     }
 }
