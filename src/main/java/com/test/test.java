@@ -8,10 +8,12 @@ public class test {
         example.sayHello();
     }
     public static void gameName() {
-        System.out.println("火柴人大乱斗");
+        System.out.println("火柴人激斗");
     }
     public static void updateVersion(){
         System.out.println("版本更新");
     }
-
+    public static void appUninstalls(){
+        System.out.println("应用卸载");
+    }
 }
