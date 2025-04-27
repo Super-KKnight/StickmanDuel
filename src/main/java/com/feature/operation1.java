@@ -2,6 +2,6 @@ package com.feature;
 
 public class operation1 {
     public operation1() {
-        System.out.println("主操作4");
+        System.out.println("分支操作1");
     }
 }
