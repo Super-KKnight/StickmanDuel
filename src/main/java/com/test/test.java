@@ -9,6 +9,9 @@ public class test {
         downVersion();
         updateVersion();
     }
+    public static void installGame(){
+        System.out.println("installGame！");
+    }
     public static void gameName() {
         System.out.println("火柴人激斗");
     }
