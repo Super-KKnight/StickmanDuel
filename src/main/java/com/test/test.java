@@ -8,4 +8,7 @@ public class test {
         System.out.println("wjy是不是天才");
         example.sayHello();
     }
+    public static void update(){
+        System.out.println("更新模块");
+    }
 }
