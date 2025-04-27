@@ -4,11 +4,7 @@ import com.example.example;
 
 public class test {
     public static void main(String[] args) {
-        gameName();
-        example.sayHello();
-        downVersion();
-        updateVersion();
-        installGame();
+
     }
     public static void installGame(){
         System.out.println("下载火柴人激斗！");
