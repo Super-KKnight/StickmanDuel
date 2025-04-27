@@ -2,7 +2,7 @@ package com.Master;
 
 public class operationA {
     public operationA() {
-        System.out.println("分操作1");
+        System.out.println("分操作2");
 
     }
 }
