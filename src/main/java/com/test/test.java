@@ -6,6 +6,8 @@ public class test {
     public static void main(String[] args) {
         gameName();
         example.sayHello();
+        appUninstalls();
+        updateVersion();
     }
     public static void gameName() {
         System.out.println("火柴人激斗");
