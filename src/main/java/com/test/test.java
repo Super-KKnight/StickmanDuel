@@ -4,11 +4,14 @@ import com.example.example;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println("拉取远程仓库测试");
-        System.out.println("wjy是超级大天才");
+        gameName();
         example.sayHello();
     }
-    public static void gamename() {
+    public static void gameName() {
         System.out.println("火柴人大乱斗");
     }
+    public static void updateVersion(){
+        System.out.println("版本更新");
+    }
+
 }
