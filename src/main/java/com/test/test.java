@@ -1,6 +1,6 @@
 package com.test;
 
-import com.example.example;
+
 
 public class test {
     private final static double version = 0.1;
