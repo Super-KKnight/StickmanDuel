@@ -1,15 +1,17 @@
-package com.myJavaFx;
+package com.Main;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class myApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         Label label = new Label("这是一个病毒软件，请扫码支付50元删除病毒");
-        Scene scene = new Scene(label, 400, 200);
+        BorderPane root = new BorderPane(label);
+        Scene scene = new Scene(root, 400, 400);
         primaryStage.setScene(scene);
         primaryStage.setTitle("My JavaFX Application");
         primaryStage.show();
