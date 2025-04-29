@@ -1,16 +1,16 @@
 package com.Gameplay.Combat.Attack.Impl;
 
-
+import com.Gameplay.Combat.Attack.StatusUpdate.StatusUpdate;
 import com.Gameplay.Combat.Attack.ParentAttack;
 
 
 public class LegsAttack extends ParentAttack {
 
     @Override
-    public void attack() {
-
+    public Double attack() {
+        setAttackDamage();
         System.out.println("这是一个" + getAttackType() + "的腿脚攻击伤害为" + getDamage());
-
+       return StatusUpdate.Calculate(getDamage());
     }
 
     public void setAttackDamage() {

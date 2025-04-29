@@ -1,16 +1,16 @@
 package com.Gameplay.Combat.Attack.Impl;
 
-
+import com.Gameplay.Combat.Attack.StatusUpdate.StatusUpdate;
 import com.Gameplay.Combat.Attack.ParentAttack;
 
 
 public class FistAttack extends ParentAttack {
     @Override
     //攻击显示，attack中执行的是最终攻击判定
-    public double attack() {
-
-        System.out.printf("这是一次"+getAttackType()+"的拳头攻击"+"伤害为"+getDamage());
-        return
+    public Double attack() {
+        setAttackDamage();
+        System.out.printf("这是一次"+getAttackType()+"的拳头攻击"+"伤害为"+getDamage());System.out.println("剩余血量:"+ StatusUpdate.Calculate(getDamage()));
+        return StatusUpdate.Calculate(getDamage());
     }
 
 
