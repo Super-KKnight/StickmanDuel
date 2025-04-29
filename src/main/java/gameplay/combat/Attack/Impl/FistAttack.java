@@ -1,9 +1,9 @@
-package gameplay.combat.Attack.Impl;
+package Gameplay.Combat.Attack.Impl;
 
-import gameplay.combat.DamageManagement.DamageManagement;
-import gameplay.combat.Attack.ParentAttack;
+import Gameplay.Combat.Attack.DamageManagement.DamageManagement;
+import Gameplay.Combat.Attack.ParentAttack;
 
-//拳攻击类
+
 public class FistAttack extends ParentAttack {
     @Override
     //攻击显示，attack中执行的是最终攻击判定

@@ -1,4 +1,4 @@
-package gameplay.combat.Attack;
+package Gameplay.Combat.Attack;
 
 //攻击接口
 public interface Attack {
