@@ -1,6 +1,6 @@
 package gameplay.combat.Attack;
 
-
+//所有攻击的父攻击类，用于定义攻击类型，伤害系数，被所有攻击子类继承
 public class ParentAttack implements Attack{
     private double damage=1.0;
     private AttackType attackType;

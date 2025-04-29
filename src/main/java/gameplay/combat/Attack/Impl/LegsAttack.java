@@ -1,12 +1,9 @@
 package gameplay.combat.Attack.Impl;
 
-import gameplay.combat.Attack.Attack;
-import gameplay.combat.Attack.DamageManagement.DamageManagement;
+import gameplay.combat.DamageManagement.DamageManagement;
 import gameplay.combat.Attack.ParentAttack;
-import org.junit.jupiter.api.Test;
 
-import java.util.Scanner;
-
+//腿攻击类
 public class LegsAttack extends ParentAttack {
 
     @Override
