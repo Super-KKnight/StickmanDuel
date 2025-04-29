@@ -5,8 +5,9 @@ public class ParentAttack implements Attack{
     private double damage=1.0;
     private AttackType attackType;
     @Override
-    public void attack() {
+    public Double attack() {
         System.out.println("这是一个攻击");
+        return 0.0;
     }
 
     public double getDamage() {
