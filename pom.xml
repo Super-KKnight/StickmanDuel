@@ -21,15 +21,15 @@
            <version>22.0.1</version>
        </dependency>
        <dependency>
-           <groupId>org.junit.jupiter</groupId>
-           <artifactId>junit-jupiter</artifactId>
-           <version>5.8.1</version>
-
+           <groupId>org.openjfx</groupId>
+           <artifactId>javafx-fxml</artifactId>
+           <version>22.0.1</version>
        </dependency>
        <dependency>
            <groupId>org.junit.jupiter</groupId>
            <artifactId>junit-jupiter</artifactId>
            <version>5.13.0-M2</version>
+           <scope>test</scope>
 
        </dependency>
    </dependencies>
@@ -45,7 +45,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.Main.Main</mainClass>
+                    <mainClass>com.core.Window.Main.Game</mainClass>
                 </configuration>
             </plugin>
         </plugins>
