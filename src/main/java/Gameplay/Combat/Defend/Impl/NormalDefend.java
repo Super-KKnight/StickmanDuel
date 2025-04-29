@@ -1,8 +1,26 @@
 package Gameplay.Combat.Defend.Impl;
 
-public class NormalDefend {
-    private static double Energy=100;
-    public static double getEnergy(){
+import Gameplay.Combat.Attack.ParentAttack;
+import Gameplay.Combat.Defend.ParentDefend;
+
+public class NormalDefend extends ParentDefend {
+    private double Energy;
+
+    @Override
+    public double defend(boolean isBlocking, double damage, double energy){
+        isDefend(isBlocking,damage,energy);
         return Energy;
+
+    }
+
+    private void EnergyCalculate(double damage,double energy){
+        Energy = energy-(damage*0.7);
+
+    }
+    //格挡判定
+    public void isDefend(boolean isBlocking,double damage,double energy){
+        if (isBlocking){
+            EnergyCalculate(damage,energy);
+        }
     }
 }

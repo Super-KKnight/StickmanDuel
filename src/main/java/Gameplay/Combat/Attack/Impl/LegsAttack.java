@@ -1,6 +1,6 @@
 package Gameplay.Combat.Attack.Impl;
 
-import Gameplay.Combat.Attack.DamageManagement.DamageManagement;
+import Gameplay.Combat.Attack.StatusUpdate.StatusUpdate;
 import Gameplay.Combat.Attack.ParentAttack;
 
 
@@ -10,10 +10,10 @@ public class LegsAttack extends ParentAttack {
     public Double attack() {
         setAttackDamage();
         System.out.println("这是一个" + getAttackType() + "的腿脚攻击伤害为" + getDamage());
-       return DamageManagement.caculate(getDamage());
+       return StatusUpdate.Calculate(getDamage());
     }
 
-    private void setAttackDamage() {
+    public void setAttackDamage() {
         switch (getAttackType()) {
             case Light -> setDamage(1.2);
             case Middle -> setDamage(1.3);

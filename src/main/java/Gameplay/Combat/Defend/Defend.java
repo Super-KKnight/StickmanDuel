@@ -1,5 +1,5 @@
 package Gameplay.Combat.Defend;
 
 public interface Defend {
-    void defend();
+    double defend(boolean isBlocking,double damage,double energy);
 }
