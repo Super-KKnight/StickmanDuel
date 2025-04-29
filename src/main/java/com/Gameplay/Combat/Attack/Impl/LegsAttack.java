@@ -1,7 +1,7 @@
-package Gameplay.Combat.Attack.Impl;
+package com.Gameplay.Combat.Attack.Impl;
 
 
-import Gameplay.Combat.Attack.ParentAttack;
+import com.Gameplay.Combat.Attack.ParentAttack;
 
 
 public class LegsAttack extends ParentAttack {

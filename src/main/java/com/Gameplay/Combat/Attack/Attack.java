@@ -1,6 +1,6 @@
 package com.Gameplay.Combat.Attack;
 
-import Gameplay.Combat.TestFighter.ParentFighter;
+import com.Gameplay.Combat.TestFighter.ParentFighter;
 
 //攻击接口
 public interface Attack {

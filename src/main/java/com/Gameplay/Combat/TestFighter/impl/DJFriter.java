@@ -1,6 +1,6 @@
-package Gameplay.Combat.TestFighter.impl;
+package com.Gameplay.Combat.TestFighter.impl;
 
-import Gameplay.Combat.TestFighter.ParentFighter;
+import com.Gameplay.Combat.TestFighter.ParentFighter;
 
 public class DJFriter extends ParentFighter {
 

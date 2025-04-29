@@ -1,4 +1,4 @@
-package Gameplay.Combat.TestFighter;
+package com.Gameplay.Combat.TestFighter;
 
 public class ParentFighter {
     private double Health;
