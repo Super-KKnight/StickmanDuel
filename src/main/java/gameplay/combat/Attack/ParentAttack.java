@@ -1,4 +1,4 @@
-package gameplay.combat.Attack;
+package Gameplay.Combat.Attack;
 
 
 public class ParentAttack implements Attack{

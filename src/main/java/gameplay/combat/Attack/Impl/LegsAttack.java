@@ -1,11 +1,8 @@
-package gameplay.combat.Attack.Impl;
+package Gameplay.Combat.Attack.Impl;
 
-import gameplay.combat.Attack.Attack;
-import gameplay.combat.Attack.DamageManagement.DamageManagement;
-import gameplay.combat.Attack.ParentAttack;
-import org.junit.jupiter.api.Test;
+import Gameplay.Combat.Attack.DamageManagement.DamageManagement;
+import Gameplay.Combat.Attack.ParentAttack;
 
-import java.util.Scanner;
 
 public class LegsAttack extends ParentAttack {
 

@@ -1,4 +1,4 @@
-package gameplay.combat.Attack.DamageManagement;
+package Gameplay.Combat.Attack.DamageManagement;
 
 public class DamageManagement {
     private static double healty=100;
