@@ -1,17 +1,19 @@
-package com.core.Window.GameMainMenu;
+package com.Rendering.GameMainMenu;
 
+import com.core.Window.Main.Game;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 
 public class GameMainMenu {
-    public static void loadMainMenu(Stage stage) {
+    public void loadMainMenu() {
         try {
+            //节点
             Parent root = FXMLLoader.load(Objects.requireNonNull(GameMainMenu.class.getResource("/Fxml/GameMainMenu.fxml")));
-            stage.getScene().setRoot(root);
+            Game.getInstance().getScene().setRoot(root);
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
