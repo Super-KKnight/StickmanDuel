@@ -1,6 +1,8 @@
 package com.core.Window.Main;
 
-import com.Input.KeyProcess;
+import com.Input.KeyPress;
+
+import com.Input.KeyRelease;
 import com.Rendering.Renderer;
 
 import com.Stage.GameStageManagement;
@@ -36,7 +38,8 @@ public class Game extends Application {
     private Renderer renderer;
     private Timer timer = new Timer(20);
     //注册键盘监听 简易版
-    private static KeyProcess keyProcess;
+    private static KeyPress KeyPress;
+    private static KeyRelease KeyRelease;
     //测试用例
     private Circle circle;
     private double xPosition, yPosition = 10;
@@ -56,7 +59,8 @@ public class Game extends Application {
     public void init() throws Exception {
         renderer = new Renderer();
         gameStageManagement = new GameStageManagement();
-        keyProcess = new KeyProcess();
+        KeyPress = new KeyPress();
+        KeyRelease = new KeyRelease();
         Screen screen = Screen.getPrimary();
         rectangle = screen.getVisualBounds();
         String iconPath = "/icon.png";
@@ -79,11 +83,13 @@ public class Game extends Application {
         stage.setWidth(width);
         stage.setHeight(height);
 
+
         //设置加载初始场景
         stage.setScene(scene);
         //renderer.GuiMainMenuRender();
         //注册键盘监听
-        stage.getScene().setOnKeyPressed(keyProcess);
+        scene.setOnKeyPressed(KeyPress);
+        scene.setOnKeyReleased(KeyRelease);
         time = System.currentTimeMillis();
         new AnimationTimer() {
             @Override
@@ -114,11 +120,13 @@ public class Game extends Application {
     private void RunTick() {
         prevXPosition = xPosition;
         prevYPositio = yPosition;
-        xPosition += 40;
-        if (xPosition > width) {
-            System.out.println((System.currentTimeMillis()-time)/1000D);
-            xPosition = 0;
+        System.out.println(KeyPress.pressed);
+        if (KeyPress.pressed.contains(KeyCode.D)) {
+            xPosition+=10;
+        }if (KeyPress.pressed.contains(KeyCode.A)) {
+            xPosition-=10;
         }
+
     }
 
     private void updateRender(float partialTicks) {
