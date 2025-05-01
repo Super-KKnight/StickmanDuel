@@ -5,7 +5,7 @@ public class ParentAttack implements Attack{
     private double damage;
     private AttackType attackType;
     @Override
-    public Double attack() {
+    public double attack() {
         System.out.println("这是一个攻击");
         return 0.0;
     }
@@ -27,10 +27,7 @@ public class ParentAttack implements Attack{
         return attackType;
     }
 
-    //以内部类枚举的形式定义变量
-    public enum AttackType{
-        Light,Middle,Heavy;
-    }
+
 
 
 }
