@@ -1,9 +1,21 @@
 package com.Gameplay.Combat.TestFighter;
 
+
+import com.Gameplay.Combat.Attack.AttackType;
+
 public class ParentFighter {
     private double Health;
     private double Energy;
     private AttackType attackType;
+    private boolean isblocking=false;
+
+    public boolean isIsblocking() {
+        return isblocking;
+    }
+
+    public void setIsblocking(boolean isblocking) {
+        this.isblocking = isblocking;
+    }
 
     public void setEnergy(double energy) {
         Energy = energy;
