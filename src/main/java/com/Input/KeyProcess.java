@@ -15,15 +15,15 @@ public class KeyProcess implements EventHandler<KeyEvent> {
     public void handle(KeyEvent keyEvent) {
         KeyCode code = keyEvent.getCode();
         if (code == KeyCode.J) {
-            System.out.println("J pressed!");
             pressed.add(code);
         }
         if (code == KeyCode.K) {
-            System.out.println("K pressed!");
             pressed.add(code);
         }
         if (code == KeyCode.L) {
-            System.out.println("L pressed!");
+            pressed.add(code);
+        }
+        if (code == KeyCode.V) {
             pressed.add(code);
         }
     }

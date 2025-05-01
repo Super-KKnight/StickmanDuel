@@ -12,7 +12,7 @@ public class GameMainMenu {
         try {
             //节点
             Parent root = FXMLLoader.load(Objects.requireNonNull(GameMainMenu.class.getResource("/Fxml/GameMainMenu.fxml")));
-            Game.getInstance().getScene().setRoot(root);
+           // Game.getInstance().getScene().setRoot(root);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

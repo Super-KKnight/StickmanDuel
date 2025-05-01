@@ -12,7 +12,6 @@ public class GuiMainMenuController {
     @FXML
     public void mouseStartGame(MouseEvent mouseEvent) {
         System.out.println("startGameLoop!");
-        Game.getInstance().RunGameLoop();
     }
     @FXML
     public void mouseEnteredGame(MouseEvent mouseEvent) {
