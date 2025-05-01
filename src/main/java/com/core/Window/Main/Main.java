@@ -21,8 +21,8 @@ public class Main extends Application {
         Scene scene = new Scene(root,1080,780);
         stage.setWidth(1080);
         stage.setHeight(780);
-        root.getChildren().add();
-        stage.setScene(scene);
+        //root.getChildren().add();
+       stage.setScene(scene);
 
         stage.show();
     }
