@@ -27,7 +27,7 @@ public class Game extends Application {
     private Image image;
     private Rectangle2D rectangle;
     private static Stage stage;
-    private final int width = 1200;
+    private final int width = 1080;
     private final int height = 900;
     private GameStageManagement gameStageManagement;
     private static final Game GameInstance = new Game();
@@ -41,6 +41,7 @@ public class Game extends Application {
     private Circle circle;
     private double xPosition, yPosition = 10;
     private double prevXPosition, prevYPositio;
+    private long time;
 
 
     public int getHeight() {
@@ -83,6 +84,7 @@ public class Game extends Application {
         //renderer.GuiMainMenuRender();
         //注册键盘监听
         stage.getScene().setOnKeyPressed(keyProcess);
+        time = System.currentTimeMillis();
         new AnimationTimer() {
             @Override
             public void handle(long l) {
@@ -112,8 +114,9 @@ public class Game extends Application {
     private void RunTick() {
         prevXPosition = xPosition;
         prevYPositio = yPosition;
-        xPosition += 1;
+        xPosition += 40;
         if (xPosition > width) {
+            System.out.println((System.currentTimeMillis()-time)/1000D);
             xPosition = 0;
         }
     }
@@ -139,7 +142,7 @@ public class Game extends Application {
     }
 
     public static long getSystemTime() {
-        return System.nanoTime() / 100000L;
+        return System.nanoTime() / 1000000L;
     }
 
     public static Pane getRoot() {
