@@ -39,8 +39,9 @@ public class Game extends Application {
     private static KeyProcess keyProcess;
     //测试用例
     private Circle circle;
-    private double xPosition, yPosition = 10;
+    private double xPosition=0, yPosition = 10;
     private double prevXPosition, prevYPositio;
+    private long time;
 
 
     public int getHeight() {
@@ -83,6 +84,7 @@ public class Game extends Application {
         //renderer.GuiMainMenuRender();
         //注册键盘监听
         stage.getScene().setOnKeyPressed(keyProcess);
+        time = System.nanoTime()/1000000L;
         new AnimationTimer() {
             @Override
             public void handle(long l) {
@@ -112,8 +114,9 @@ public class Game extends Application {
     private void RunTick() {
         prevXPosition = xPosition;
         prevYPositio = yPosition;
-        xPosition += 1;
+        xPosition += 40;
         if (xPosition > width) {
+            System.out.println(((double) System.nanoTime() /1000000L-time)/1000D);
             xPosition = 0;
         }
     }
@@ -139,7 +142,7 @@ public class Game extends Application {
     }
 
     public static long getSystemTime() {
-        return System.nanoTime() / 100000L;
+        return System.nanoTime()/1000000L;
     }
 
     public static Pane getRoot() {
