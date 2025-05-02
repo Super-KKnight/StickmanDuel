@@ -120,7 +120,7 @@ public class Game extends Application {
     private void RunTick() {
         prevXPosition = xPosition;
         prevYPositio = yPosition;
-        System.out.println(KeyPress.pressed);
+
         if (KeyPress.pressed.contains(KeyCode.D)) {
             xPosition+=10;
         }if (KeyPress.pressed.contains(KeyCode.A)) {
